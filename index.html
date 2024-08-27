@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>presentation_title</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://orstedcdn.azureedge.net/-/media/www/images/corp/graphics/icons/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/simple.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <link rel="preload" href="https://orstedcdn.azureedge.net/Assets_/dist/fonts/OrstedSans-Regular.woff2" as="font"
+    type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css" />
+  <style>
+    :root {
+      --main-bg-color: white;
+      --main-text-color: black;
+      --heading-color: #4099da;
+      --link-color: #4099da;
+    }
+
+    .reveal {
+      background-color: var(--main-bg-color);
+      color: var(--main-text-color);
+      font-family: "Orsted Sans", "Helvetica Neue", Arial, sans-serif !important;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: var(--heading-color);
+      font-family: "Orsted Sans", "Helvetica Neue", Arial, sans-serif !important;
+    }
+
+    .reveal a {
+      color: var(--link-color);
+    }
+
+    .reveal .slide-background {
+      padding-bottom: 50px;
+    }
+
+    .reveal footer.footer {
+      position: absolute;
+      bottom: var(--r-block-margin);
+      left: var(--r-block-margin);
+      right: calc(var(--r-block-margin) + 2 * 3.6em);
+      height: var(--r-main-font-size);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      font-size: calc(var(--r-main-font-size) * 0.4);
+    }
+
+    .reveal footer.footer img {
+      height: var(--r-main-font-size);
+      width: auto;
+      object-fit: contain;
+    }
+
+    @media print {
+      .reveal .footer {
+        position: fixed;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <footer class="footer">
+      <a href="https://orsted.com">
+        <img src="https://orstedcdn.azureedge.net/-/media/www/images/corp/graphics/icons/favicon.ico" alt="Orsted logo">
+      </a>
+      <span>my_name, presentation_title, DD.MM.YYYY</span>
+    </footer>
+    <div class="slides">
+      <section>
+        <h1>presentation_title</h1>
+        <p>presentation_subtitle</p>
+      </section>
+      <section data-markdown>
+        <textarea data-template>
+## Markdown Slide A
+A paragraph with some text and a [link](https://orsted.com).
+---
+## Markdown Slide B
+
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+|   Cell   |   Cell   |   Cell   |
+|   Cell   |   Cell   |   Cell   |
+
+---
+## Markdown Slide C
+
+List with numbers:
+1. Item 1
+   - Item 1.1
+   - Item 1.2
+1. Item 2
+   1. Item 2.1
+   1. Item 2.2
+
+        </textarea>
+      </section>
+      <!-- END OF MARKDOWN SLIDES -->
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/markdown/markdown.min.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      plugins: [RevealHighlight, RevealNotes, RevealMarkdown]
+    });
+
+  </script>
+</body>
+
+</html>
