@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>presentation_title</title>
+  <title>Czemu Python? Why Python?</title>
   <link rel="icon" type="image/x-icon"
     href="https://orstedcdn.azureedge.net/-/media/www/images/corp/graphics/icons/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
@@ -27,6 +27,12 @@
       background-color: var(--main-bg-color);
       color: var(--main-text-color);
       font-family: "Orsted Sans", "Helvetica Neue", Arial, sans-serif !important;
+      font-size: calc(var(--r-main-font-size) * 0.75);
+    }
+
+    .reveal .slides {
+      text-align: left;
+
     }
 
     .reveal h1,
@@ -61,6 +67,13 @@
       font-size: calc(var(--r-main-font-size) * 0.4);
     }
 
+    /* Add media query for smaller screens */
+    @media screen and (max-width: 768px) {
+      .reveal footer.footer {
+        font-size: calc(var(--r-main-font-size) * 0.3);
+      }
+    }
+
     .reveal footer.footer img {
       height: var(--r-main-font-size);
       width: auto;
@@ -81,35 +94,175 @@
       <a href="https://orsted.com">
         <img src="https://orstedcdn.azureedge.net/-/media/www/images/corp/graphics/icons/favicon.ico" alt="Orsted logo">
       </a>
-      <span>my_name, presentation_title, DD.MM.YYYY</span>
+      <span>Czemu Python? Why Python?, 28.08.2024, Gliwice</span>
     </footer>
     <div class="slides">
       <section>
-        <h1>presentation_title</h1>
-        <p>presentation_subtitle</p>
+        <h1>Czemu Python? Why Python?</h1>
+        <p>PyLadies 2024 @ PyCon PL</p>
       </section>
       <section data-markdown>
         <textarea data-template>
-## Markdown Slide A
-A paragraph with some text and a [link](https://orsted.com).
+
+## Co to jest Python?
+- Python to wysokopoziomowy język programowania.
+- Prosty w użyciu, ma czytelną składnię.
+- Idealny dla początkujących i zaawansowanych programistów.
+
+## What is Python?
+- Python is a high-level programming language.
+- Easy to use, has a readable syntax.
+- Ideal for beginners and advanced programmers.
+
 ---
-## Markdown Slide B
 
-| Column 1 | Column 2 | Column 3 |
-|----------|----------|----------|
-|   Cell   |   Cell   |   Cell   |
-|   Cell   |   Cell   |   Cell   |
+## Zastosowania Pythona
+## Applications of Python
 
 ---
-## Markdown Slide C
 
-List with numbers:
-1. Item 1
-   - Item 1.1
-   - Item 1.2
-1. Item 2
-   1. Item 2.1
-   1. Item 2.2
+### Rozwój Aplikacji Webowych
+- Frameworki: Django, Flask, FastAPI
+- Budowa dynamicznych stron internetowych i aplikacji
+
+### Web Development
+- Frameworks: Django, Flask, FastAPI
+- Building dynamic websites and applications
+
+---
+
+### Analiza Danych
+- Biblioteki: Pandas, NumPy, Matplotlib
+- Przetwarzanie, analiza, wizualizacja danych
+
+### Data Analysis
+- Libraries: Pandas, NumPy, Matplotlib
+- Processing, analyzing, and visualizing data
+
+---
+
+### Sztuczna Inteligencja
+- Biblioteki: TensorFlow, Keras, PyTorch
+- Tworzenie modeli AI, analiza danych i predykcja
+
+### Artificial Intelligence and Machine Learning
+- Libraries: TensorFlow, Keras, PyTorch
+- Creating AI models, data analysis, and prediction
+
+---
+
+### Automatyzacja
+- Tworzenie skryptów do automatyzacji codziennych zadań
+- Przykłady: przetwarzanie plików, zarządzanie systemem
+
+### Automation and Scripting
+- Creating scripts to automate daily tasks
+- Examples: file processing, system management
+
+---
+
+### Rozwój Gier
+- Silniki gier: Pygame, Panda3D
+- Tworzenie gier 2D i 3D
+
+### Game Development
+- Game engines: Pygame, Panda3D
+- Creating 2D and 3D games
+
+---
+
+### Internet Rzeczy (IoT)
+- Użycie w projektach z Raspberry Pi, Arduino, Home Assistant
+- Zbieranie i analiza danych z sensorów
+
+### Internet of Things (IoT)
+- Used in projects with Raspberry Pi, Arduino, Home Assistant
+- Collecting and analyzing data from sensors
+---
+
+## Aplikacje używające Python
+## Applications using Python
+
+---
+## Instagram
+### Wykorzystanie Pythona
+- Główny język do obsługi backendu aplikacji.
+- Procesor obrazów do efektywnego przetwarzania zdjęć.
+- Szybki rozwój i iteracja dzięki prostocie Pythona.
+
+### Usage of Python
+- Main language for backend application management.
+- Image processor for efficient image processing.
+- Quick development and iteration due to Python's simplicity.
+
+---
+
+## Spotify
+### Wykorzystanie Pythona
+- Analiza danych pracy użytkowników.
+- Backend aplikacji, przetwarzanie danych i rekomendacje muzyczne.
+- Systemy analityczne monitorujące aktywność użytkowników.
+
+### Usage of Python
+- Analysis of user activity data.
+- Backend application, data processing, and music recommendations.
+- Analytical systems monitoring user activity.
+
+---
+
+## Dropbox
+### Wykorzystanie Pythona
+- Oparta na Pythonie część backendu.
+- Obsługuje synchronizację plików i zarządzanie danymi użytkowników.
+- Automatyzacja i monitorowanie zasobów w chmurze.
+
+### Usage of Python
+- Python-based part of the backend.
+- Manages file synchronization and user data.
+- Automation and monitoring of cloud resources.
+
+---
+
+## Reddit
+### Wykorzystanie Pythona
+- Backend oparty na Flask i Pylons.
+- Operacje na bazach danych (SQLAlchemy) i generowanie treści.
+- Scripting dla analizy dużych zbiorów danych.
+
+### Usage of Python
+- Backend built on Flask and Pylons.
+- Database operations (SQLAlchemy) and content generation.
+- Scripting for analyzing large datasets.
+
+---
+
+## YouTube
+### Wykorzystanie Pythona
+- Zastosowanie w backendzie i zarządzaniu bazami danych.
+- Analiza danych o użytkownikach i rekomendacje treści.
+- Skrypty do przetwarzania filmów i generowania raportów.
+
+### Usage of Python
+- Used in backend and database management.
+- Analysis of user data and content recommendations.
+- Scripts for video processing and report generation.
+
+---
+
+## Podsumowanie
+### Dlaczego Python?
+- Prosta i czytelna składnia pozwala na szybkie iteracje.
+- Bogate biblioteki i frameworki wspomagające rozwój.
+- Dobre wsparcie społeczności i dostępność zasobów.
+
+### Why Python?
+- Simple and readable syntax allows for quick iterations.
+- Rich libraries and frameworks supporting development.
+- Good community support and availability of resources.
+
+---
+
+## [Some statistics (click)](https://survey.stackoverflow.co/2024/technology/#most-popular-technologies)
 
         </textarea>
       </section>
